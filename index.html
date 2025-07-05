@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mobile Case Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Mobile Case Store</h1>
+    <p>Stylish & Affordable Cases – ₹100 Only</p>
+  </header>
+
+  <section class="products">
+    <h2>Our Products</h2>
+    <div class="product-list">
+      <!-- Product 1 -->
+      <div class="product">
+        <img src="images/case1.png" alt="Case 1">
+        <h3>Black Shockproof Case</h3>
+        <p>₹100</p>
+        <button onclick="orderNow('Black Shockproof Case')">Order Now</button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product">
+        <img src="images/case2.png" alt="Case 2">
+        <h3>Transparent Slim Case</h3>
+        <p>₹100</p>
+        <button onclick="orderNow('Transparent Slim Case')">Order Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-form">
+    <h2>Place Your Order</h2>
+    <form action="https://formsubmit.co/samuelvijayjacob@gmail.com" method="POST">
+      <!-- Hidden fields -->
+      <input type="hidden" name="_subject" value="New Mobile Case Order">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="box">
+
+      <!-- Visible fields -->
+      <input type="text" name="Product" id="product" placeholder="Product Name" readonly required>
+      <input type="text" name="Name" placeholder="Your Name" required>
+      <input type="tel" name="Phone" placeholder="Phone Number" required>
+      <input type="text" name="Address" placeholder="Delivery Address" required>
+      <button type="submit">Submit Order</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mobile Case Store</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
